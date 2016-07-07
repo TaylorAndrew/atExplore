@@ -1,0 +1,18 @@
+Package: atExplore
+Type: Package
+Title: Methods for Exploring Data
+Version: 0.1.0
+Author: Andrew Taylor
+Maintainer: Andrew Taylor <taylor.andrew.r@gmail.com>
+Description: Methods for very simple data exploration including detecting
+    outliers, finding ids with missing data, counting non-NA data, sorting
+    data.frames and finding items in a vector that cannot be converted to numeric.
+License: CC0
+LazyData: TRUE
+Imports:
+  outliers
+Suggests:
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1

@@ -1,0 +1,48 @@
+---
+title: "atExplore"
+author: "Andrew Taylor"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{atExplore}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Finding Abberations:
+
+`detectOutliers()` return values of x that are outliers.
+
+
+Usage: `detectOutliers(x, method = "SD", SDs = 3.5)`
+
+
+
+`findMissings()` provides a vector (per variable), containing the observations in the dataset.
+
+Usage: `findMissings(data, vars, idVar = NULL)`
+
+
+
+`nnv()` returns all values in a vector x that cannot be successfully coerced to numeric.
+
+Usage: `nnv(x)`
+
+
+## Other Methods:
+
+`findVars()` searching the variable names of a data.frame for matches to a provided character string, and then returns the matching variable name(s).
+
+Usage: `findVars(data, str, ignore.case = TRUE, fuzzy = TRUE)`
+
+
+`n_()` returns the length of a vector, excluding NA, NaN, and Infinite values.
+
+Usage: `n_(x)`
+
+
+
+`sortDF()` is a convenience wrapper for sorting data.frames.
+
+Usage: `sortDF(data, decreasing = FALSE, by = NULL)`
+
